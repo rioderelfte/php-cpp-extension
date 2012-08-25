@@ -1,0 +1,13 @@
+An example PHP extension written in C++
+
+r9e/: the actual "library" code
+cpptest.cpp: the actual extension code
+config.m4: needed by autotools
+test.php: a small script to test the extension
+php.sh: run php with the extension loaded
+
+to build basically run:
+
+phpize
+./configure CXXFLAGS=-std=gnu++11
+make
